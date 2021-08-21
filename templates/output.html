@@ -1,0 +1,20 @@
+{%extends "layout.html" %}
+{% block content %}
+
+<div class="pt-5 d-flex justify-content-center">
+    <div class="w-50 d-flex flex-column ">
+        <h1>Hashing Results</h1>
+        <p>The <span style="color:red">{{ algo }} </span> hash value for '<span style="color:red">{{plaintext}}</span>'
+            is:
+            <br><br> {{hstring}}</p>
+        <br>
+        {% if g.user %}
+            <h5>Previous Requests for {{g.user.profile.firstName}}</h5>
+            {% for hash in p_requests[g.user.profile.email] %}
+            <p>{{hash}}</p>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+
+{% endblock content%}
