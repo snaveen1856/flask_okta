@@ -79,10 +79,6 @@ def upload():
     return render_template('hash.html', form=form)
 
 
-@app.route("/mylogin")
-def mylogin():
-    return render_template('mylogin.html')
-
 
 @app.route("/userprofile")
 @oidc.require_login
