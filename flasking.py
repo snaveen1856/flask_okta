@@ -17,7 +17,7 @@ app.config["OIDC_SCOPES"] = ["openid", "email", "profile"]
 app.config['SECRET_KEY'] = '\xffI\x18M\x977\x19,\xd2|\x7f\xbc\xf6J\xc4%'
 app.config["OIDC_ID_TOKEN_COOKIE_NAME"] = "oidc_token"
 oidc = OpenIDConnect(app)
-okta_client = UsersClient("https://dev-63028420.okta.com", "008MBKxsyq4_T4wVEYOljGbZmCc6vDdihDJI5QCie6")
+okta_client = UsersClient("YOUR_ORG_URL", "YOURAUTHCODE") # change the auth code to yours
 
 hashes = {}
 
