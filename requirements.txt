@@ -9,7 +9,6 @@ ecdsa==0.17.0
 Flask==2.0.1
 flask-oidc==1.4.0
 Flask-WTF==0.15.1
-flatdict==4.0.1
 httplib2==0.19.1
 idna==2.10
 itsdangerous==2.0.1
